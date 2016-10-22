@@ -25,6 +25,12 @@ body {
 	align-items: center;
 }
 
+.header-body {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
 .content {
 	background-color: blue;
 	padding: 10px;
