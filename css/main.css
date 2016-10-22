@@ -21,8 +21,16 @@ body {
 	flex: 1;
 	max-height: 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	padding: 15px;
+}
+
+.header-child {
+	display: flex;
+	flex: 1;
+	max-width: 960px;
+	justify-content: space-between;
 }
 
 .header-body {
@@ -36,6 +44,28 @@ body {
 	padding: 10px;
 	flex: 1;
 	display: flex;
+	justify-content: center;
+}
+
+.content-child {
+	display: flex;
+	flex: 1;
+	max-width: 960px;
+	max-height: 100px;
+
+}
+
+.profile {
+	flex: 1;
+	background-color: pink;
+	max-width: 100px;
+
+}
+
+.msg {
+	flex: 1;
+	background: orange;
+	padding: 15px;
 }
 
 .footer	{
@@ -43,6 +73,14 @@ body {
 	flex: 1;
 	max-height: 50px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
+	padding: 15px;
+}
+
+.footer-child {
+	display: flex;
+	flex: 1;
+	max-width: 960px;
+	justify-content: space-between;
 }
