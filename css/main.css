@@ -45,7 +45,21 @@ body {
 	display: flex;
 	flex: 1;
 	max-width: 960px;
+	max-height: 100px;
 
+}
+
+.profile {
+	flex: 1;
+	background-color: pink;
+	max-width: 100px;
+
+}
+
+.msg {
+	flex: 1;
+	background: orange;
+	padding: 15px;
 }
 
 .footer	{
