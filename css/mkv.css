@@ -1,0 +1,195 @@
+/* mkv.css */
+
+/*---------------------------------------------------------------------------
+    CSS TO FORMAT FLEXBOX
+        tutorial:
+            http://www.w3schools.com/css/css3_flexbox.asp
+        -webkit:
+            for safari
+    
+    License: none (public domain);
+
+    Author: Victor Mutai;
+            muvic08@gmail.com
+------------------------------------------------------------------------------/
+
+
+/*---------------------------------------------------------------------------
+                                GLOBAL 
+----------------------------------------------------------------------------*/
+
+/*  
+    box-sizing: include padding and border in the element total width and height 
+*/
+*, *::after, *::before { box-sizing: border-box; }
+*, *::after, *::before { -webkit-font-smoothing: antialiased; } /* sharpen font */
+
+/*---------------------------------------------------------------------------
+                                POSITIONS & DISPLAY
+----------------------------------------------------------------------------*/
+.fix { position: fixed; }
+.abs { position: absolute; }
+.rel { position: relative; }
+.stat { position: static; }
+.inh { position: inherit; }
+.init { position: initial; }
+
+/* 
+    Reserved symbols: d: display, flx: flex, bl: block, inl: inline, inh: inherit;
+*/
+.d-bl { display: block; }
+.d-inl { display: inline; }
+.d-inl-bl { display: inline-block; }
+.d-flx { display: -webkit-flex;  display: flex; }
+.d-inl-flx { display: -webkit-inline-flex;  display: inline-flex; }
+.d-none { display: none; }
+.d-inh { display: inherit; }
+.d-init { display: initial; }
+
+/*---------------------------------------------------------------------------
+                                FLEX CONTAINER 
+----------------------------------------------------------------------------*/
+
+/*
+    direction: change the direction of the flex line;  default is ltr 
+*/
+.flx-rtl { direction: rtl; }
+
+/*
+    flex-direction: specifies the direction of the flexible items inside the flex container
+        flx-rw-rev: row reverse
+        flx-cl: column
+        flx-cl-rev: column reverse
+*/
+.flx-rw-rev { -webkit-flex-direction: row-reverse; flex-direction: row-reverse; }
+.flx-cl { -webkit-flex-direction: column;  flex-direction: column; }
+.flx-cl-rev { -webkit-flex-direction: column-reverse; flex-direction: column-reverse; }
+
+/*
+    justify-content: horizontally aligns flex container's items
+    -h: horizontally; -v: vertically;
+*/
+.flx-st-h {  -webkit-justify-content: flex-start; justify-content: flex-start; }
+.flx-end-h {  -webkit-justify-content: flex-end; justify-content: flex-end; }
+.flx-ctr-h {  -webkit-justify-content: center; justify-content: center; }
+.flx-btw-h {  -webkit-justify-content: space-between; justify-content: space-between; }
+.flx-ard-h {  -webkit-justify-content: space-around; justify-content: space-around; }
+
+/*
+    align-items: vertically aligns flex container's items
+*/
+.flx-strch-v { -webkit-align-items: stretch; align-items: stretch; }
+.flx-st-v { -webkit-align-items: flex-start; align-items: flex-start; }
+.flx-end-v { -webkit-align-items: flex-end; align-items: flex-end; }
+.flx-ctr-v { -webkit-align-items: center; align-items: center; }
+.flx-bsln-v { -webkit-align-items: baseline; align-items: baseline; }
+
+/*
+    flex-wrap: specifies whether the flex items, if there is not enough room 
+*/
+.flx-nowrp { -webkit-flex-wrap: nowrap; flex-wrap: nowrap; }
+.flx-wrp { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+.flx-wrp-rev { -webkit-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+
+/*
+    align-content: modifies the behavior of the flex-wrap property (aligns flex lines instead of flex items) 
+*/
+.flx-cont-strch-v { -webkit-align-content: stretch; -align-content: stretch; }
+.flx-cont-st-v { -webkit-align-content: flex-start; -align-content: flex-start; }
+.flx-cont-end-v { -webkit-align-content: flex-end; -align-content: flex-end; }
+.flx-cont-ctr-v  { -webkit-align-content: center; -align-content: center; }
+.flx-cont-btw-v { -webkit-align-content: space-between; -align-content: space-between; }
+.flx-cont-ard-v { -webkit-align-content: space-around; -align-content: space-around; }
+
+
+
+/*---------------------------------------------------------------------------
+                                FLEX ITEM 
+----------------------------------------------------------------------------*/
+/*
+    align-self: overrides the flex container's align-items property for that item
+*/
+.flx-slf-strch-v { -webkit-align-self: stretch; align-self: stretch; }
+.flx-slf-st-v { -webkit-align-self: flex-start; align-self: flex-start; }
+.flx-slf-end-v { -webkit-align-self: flex-end; align-self: flex-end; }
+.flx-slf-ctr-v { -webkit-align-self: center; align-self: center; }
+.flx-slf-bsln-v { -webkit-align-self: baseline; align-self: baseline; }
+
+
+/*
+    flex: specifies the length of the flex item, relative to the rest of the flex items inside the same container.
+*/
+.flx-itm-eq { -webkit-flex: 1; flex: 1; } /*  equal width for each item; full width;  override */
+
+
+/*---------------------------------------------------------------------------
+                                WIDTH & HEIGHT 
+----------------------------------------------------------------------------*/
+/* 
+    Reserved symbols: ht: height, wd: width, -i: inherit;
+*/
+.ht-vh { min-height: 100vh; } /* full viewport height */
+.wd-vw { min-width: 100vw; } /* full viewport width */
+.wd-100 { width: 100%; }
+.ht-100 { height: 100%; }
+.wd-0 { width: 0; }
+.ht-0 { height: 0; }
+.wd-i { width: inherit; }
+.ht-i { height: inherit; }
+
+/*---------------------------------------------------------------------------
+                                MARGIN & OVERFLOW & CURSOR
+----------------------------------------------------------------------------*/
+/* 
+    Reserved symbols: p: padding, m: margin, ovflw: overflow;
+*/
+.m-auto { margin: auto; }
+.m-auto-h { margin-left: auto; margin-right: auto; }
+.m-auto-v { margin-top: auto; margin-right: auto; }
+.m-0 { margin: 0; }
+.m-0-t { margin-top: 0; }
+.m-0-r { margin-right: 0; }
+.m-0-b { margin-bottom: 0; }
+.m-0-l { margin-left: 0; }
+
+.ovflw-hid { overflow: hidden; }
+.ovflw-vis { overflow: visible; }
+.ovflw-scr { overflow: scroll; }
+.ovflw-auto { overflow: auto; }
+.ovflw-hid-x { overflow-x: hidden; }
+.ovflw-vis-x { overflow-x: visible; }
+.ovflw-scr-x { overflow-x: scroll; }
+.ovflw-auto-x { overflow-x: auto; }
+.ovflw-hid-y { overflow-y: hidden; }
+.ovflw-vis-y { overflow-y: visible; }
+.ovflw-scr-y { overflow-y: scroll; }
+.ovflw-auto-y { overflow-y: auto; }
+
+.cursor-pointer { cursor: pointer; }
+
+/*---------------------------------------------------------------------------
+                                MEDIA QUERIES 
+----------------------------------------------------------------------------*/
+/** ANIMATE 
+    https://jsfiddle.net/MadLittleMods/EM4xL/
+**/
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1025px) {
+    .desktop-hidden { display: none; }    
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tablet-hidden { display: none; }
+    .flex-cl-md { -webkit-flex-direction: column;  flex-direction: column; }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {
+    .mobile-hidden { display: none; }
+    .flx-cl-sm { -webkit-flex-direction: column;  flex-direction: column; }
+}
+
+.hidden { display: none; }

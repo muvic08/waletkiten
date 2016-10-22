@@ -1,3 +1,14 @@
+/******************************************
+			GLOBAL
+******************************************/
+
+/*  
+    box-sizing: include padding and border in the element total width and height 
+*/
+*, *::after, *::before { box-sizing: border-box; }
+*, *::after, *::before { -webkit-font-smoothing: antialiased; } /* sharpen font */
+
+
 body {
 	background-color: grey;
 }
