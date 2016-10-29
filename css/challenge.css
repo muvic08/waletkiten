@@ -1,0 +1,39 @@
+/******************************************
+			GLOBAL
+******************************************/
+
+/*  
+    box-sizing: include padding and border in the element total width and height 
+*/
+*, *::after, *::before { box-sizing: border-box; }
+*, *::after, *::before { -webkit-font-smoothing: antialiased; } /* sharpen font */
+
+body {
+	background-color: azure;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	background-color: aquamarine;
+	display: flex;
+	flex: 1;
+	max-height: 50px;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
+
+.header-child {
+	display: flex;
+	flex: 1;
+	max-width: 960px;
+	justify-content: space-between;
+}
+
+.header-body {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}

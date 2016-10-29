@@ -1,0 +1,38 @@
+*, *::after, *::before { box-sizing: border-box; }
+*, *::after, *::before { -webkit-font-smoothing: antialiased; } 
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.sidebar {
+	flex: 1;
+	max-width: 300px;
+	background: peach;
+}
+
+.content {
+	flex: 1;
+	background: brown;
+	display: flex;
+	flex-direction: column;
+}
+
+.content-child {
+	flex: 1;
+}
+
+.footer {
+	flex: 1;
+	max-height: 60px;
+	background: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-child {
+}
+
