@@ -1,3 +1,4 @@
+
 /******************************************
 			GLOBAL
 ******************************************/
@@ -28,16 +29,16 @@ body {
 .header-child {
 	display: flex;
 	flex: 1;
-	max-width: 750px;
+	max-width: 960px;
 	justify-content: space-between;
 }
 
-.header-logo {
-	flex: 1;
+.logo {
 	max-width: 120px;
+	flex: 1;
 }
 
-.header-nav {
+.nav {
 	flex: 1;
 	display: flex;
 	justify-content: flex-end;

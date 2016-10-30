@@ -1,0 +1,90 @@
+/*
+	wk.css
+ 	wk prefix means walet kiten
+*/
+
+/******************************************
+			GLOBAL
+******************************************/
+
+/*  
+    box-sizing: include padding and border in the element total width and height 
+*/
+*, *::after, *::before { box-sizing: border-box; }
+*, *::after, *::before { -webkit-font-smoothing: antialiased; } /* sharpen font */
+
+/******************************************
+			WK GENERICS
+******************************************/
+
+/*** container styles ****/
+.wk-rows { display: flex; } /* organize the children in a row */
+.wk-cols {					
+	display: flex;
+	flex-direction: column;
+}  /* organize the children in a column */
+
+/*** container child styles ****/
+.wk-eq { flex: 1; } /* all children share the size equaly */
+
+
+
+/******************************************
+			WRAPPER
+******************************************/
+
+.wrapper {
+	min-height: 100vh;
+}
+
+/******************************************
+			HEADER
+******************************************/
+.header {
+	max-height: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+}
+
+.header-child {
+	max-width: 960px; 
+}
+
+.logo {
+	max-width: 150px;
+}
+
+.nav {
+	justify-content: flex-end;
+}
+
+.nav-item {
+	padding-left: 20px;
+}
+/******************************************
+			CONTENT
+******************************************/
+.content {
+	justify-content: center;
+}
+
+.content-child {
+	max-width: 960px;
+}
+
+/******************************************
+			FOOTER
+******************************************/
+.footer {
+	max-height: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
+}
+
+.footer-child {
+	max-width: 960px;
+}
