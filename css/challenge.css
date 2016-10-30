@@ -28,12 +28,21 @@ body {
 .header-child {
 	display: flex;
 	flex: 1;
-	max-width: 960px;
+	max-width: 750px;
 	justify-content: space-between;
 }
 
-.header-body {
+.header-logo {
+	flex: 1;
+	max-width: 120px;
+}
+
+.header-nav {
 	flex: 1;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+}
+
+.nav-item {
+	padding-left: 20px;
 }
