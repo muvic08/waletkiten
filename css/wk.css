@@ -18,8 +18,11 @@
 ******************************************/
 
 /*** container styles ****/
-.wk-rows { display: flex; } /* organize the children in a row */
-.wk-cols {					
+.wk-row { 
+	display: flex; 
+	flex-direction: row; 
+} /* organize the children in a row */
+.wk-col {					
 	display: flex;
 	flex-direction: column;
 }  /* organize the children in a column */
@@ -88,4 +91,5 @@
 
 .footer-child {
 	max-width: 960px;
+	justify-content: space-between;
 }
