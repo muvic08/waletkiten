@@ -51,6 +51,7 @@ a { text-decoration: none; }
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
+	border-bottom: 1px solid rgba(150,150,150,0.5);
 }
 
 .header-child {
@@ -94,11 +95,16 @@ a { text-decoration: none; }
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
+	border-top: 1px solid rgba(150,150,150,0.2);
 }
 
 .footer-child {
 	max-width: 960px;
 	justify-content: space-between;
+}
+
+.footer-child a {
+	color: blue;
 }
 
 /*** PLAYGROUND ****/
