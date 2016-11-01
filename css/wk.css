@@ -40,17 +40,18 @@ a { text-decoration: none; }
 .wrapper {
 	min-height: 100vh;
 	height: 100vh;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /******************************************
 			HEADER
 ******************************************/
 .header {
-	max-height: 50px;
-	height: 50px;
+	max-height: 60px;
+	height: 60px;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	padding: 15px;
 	border-bottom: 1px solid rgba(150,150,150,0.5);
 }
 
@@ -60,6 +61,8 @@ a { text-decoration: none; }
 
 .logo {
 	max-width: 150px;
+	font-size: 20px;
+	color: rgba(10,10,10,1);
 }
 
 .nav {
@@ -71,7 +74,17 @@ a { text-decoration: none; }
 }
 
 .nav-item a {
-	color: blue;
+	font-size: 17px;
+	font-weight: 400;
+	color: rgba(100,100,100,0.8);
+}
+
+.nav-item a:hover {
+	color: rgba(20,20,20,0.8);
+}
+
+.nav-item a.active {
+	color: rgba(20,20,20,0.8);
 }
 /******************************************
 			CONTENT
@@ -79,11 +92,37 @@ a { text-decoration: none; }
 .content {
 	justify-content: center;
 	overflow-y: scroll;
+	padding: 15px;
 }
 
 .content-child {
 	max-width: 960px;
 	padding: 15px;
+	line-height: 22px;
+	color: rgba(20,20,20,1);
+	font-weight: 300;
+}
+
+.content-child .title {
+	line-height: 50px;
+	padding-bottom: 10px;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+.content-child .title::before,
+.content-child .title::after {
+    background-color: #42659d;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    top: -10px;
+    width: 15%;
+}
+
+.divider30px {
+	height: 30px;
 }
 
 /******************************************
@@ -94,8 +133,11 @@ a { text-decoration: none; }
 	height: 50px;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	padding: 15px;
 	border-top: 1px solid rgba(150,150,150,0.2);
+
+	font-weight: 200;
+	color: rgba(100,100,100,0.8);
 }
 
 .footer-child {

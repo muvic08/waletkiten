@@ -10,6 +10,7 @@
 
 
 body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	background-color: grey;
 	min-height: 100vh;
 	display: flex;

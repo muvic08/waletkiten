@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------------------
+                                MEDIA QUERIES 
+----------------------------------------------------------------------------*/
+/** ANIMATE 
+    https://jsfiddle.net/MadLittleMods/EM4xL/
+**/
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1025px) {
+    .desktop-hidden { display: none; }  
+
+    .title-child {
+    	display: inline-block;
+    }  
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tablet-hidden { display: none; }
+    .flex-cl-md { -webkit-flex-direction: column;  flex-direction: column; }
+
+    .title-child {
+    	display: inline-block;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width : 767px) {
+    .mobile-hidden { display: none; }
+    .flx-cl-sm { -webkit-flex-direction: column;  flex-direction: column; }
+}
+
+.hidden { display: none; }
