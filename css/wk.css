@@ -6,7 +6,6 @@
 /******************************************
 			GLOBAL
 ******************************************/
-
 /*  
     box-sizing: include padding and border in the element total width and height 
 */
@@ -146,7 +145,7 @@ a { text-decoration: none; }
 }
 
 .footer-child a {
-	color: blue;
+	color: lightblue;
 }
 
 /*** PLAYGROUND ****/
